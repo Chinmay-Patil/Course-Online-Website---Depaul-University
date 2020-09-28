@@ -1,0 +1,222 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <title>Schedule</title>
+    <style>
+      li {
+        list-style-type: none;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Monitor.html">Monitor </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="../pages/Schedule.html"
+              style="color: rgb(255, 168, 6);"
+              >Schedule</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Recording.html">Recording</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Message.html">Message</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Log.html">Log</a>
+          </li>
+        </ul>
+        <a
+          style="color: white; font-size: 20;"
+          href="https://colraweb.cdm.depaul.edu/ra/login.aspx?returnurl=/ra/default.aspx"
+          target="_blank"
+        >
+          Go to RA WEBSITE
+        </a>
+      </div>
+    </nav>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <img
+        src="https://www.cdm.depaul.edu/PublishingImages/logo-tree-of-life-01.svg"
+        style="width: 100%; height: 10%; margin-left: -5%; margin-top: 2%;"
+      />
+
+      <div class="moved">
+        <a href="../Schedule/ctiRegularSchedule.html">CTI Regular Schedule</a>
+        <a style="color: white;" href="../Schedule/temporarySchedule.html"
+          >Temporary Schedule</a
+        >
+        <a href="../Schedule/insertTempSchedule.html">Insert Temp Schedule</a>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-left: 20vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+      "
+    >
+      <p
+        style="
+          color: black;
+          font-size: medium;
+          font-weight: bold;
+          padding-top: 2rem;
+          padding-left: 1.6rem;
+        "
+      >
+        Displays all the recordings that have been entered as standalone or
+        ad-hoc recordings, i.e. those recordings that are not part of a
+        recurring schedule. These are referred to as Temp/Temporary Schedules.
+        The Temp schedules that have been entered and have been pushed to the
+        PPC schedule as well as the newly entered ones that have not been pushed
+        yet, both appear in this list.
+      </p>
+      <p
+        style="
+          color: black;
+          font-size: medium;
+          font-weight: bold;
+          padding-left: 1.6rem;
+          padding-bottom: 2rem;
+        "
+      >
+        Same as the CTI schedule function, here too the schedules can be
+        searched using filters.
+      </p>
+      <img
+        src="../Images/Schedule/sc4.png"
+        alt=""
+        style="
+          width: 700px;
+          height: 240px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #000000;
+        "
+      />
+
+      <h4
+        style="
+          text-decoration: underline;
+          padding-bottom: 1rem;
+          text-decoration: underline;
+          text-align: center;
+          padding-top: 4rem;
+        "
+        id="normf"
+      >
+        Search Bar
+      </h4>
+      <p
+        style="
+          color: black;
+          font-size: medium;
+          font-weight: bold;
+          padding-left: 1.6rem;
+          padding-bottom: 2rem;
+        "
+      >
+        The inserted temp schedules can be searched here using filters. Below
+        search bar, the current quarter’s Begin & End dates are displayed.
+      </p>
+      <img
+        src="../Images/Schedule/sc5.png"
+        alt=""
+        style="
+          width: 900px;
+          height: 113px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #000000;
+        "
+      />
+      <ul>
+        <li style="margin-top: 2vw; padding-top: 2rem;">
+          <span style="font-weight: bold;">&#9658; Quarter</span>: Search by
+          Quarter. Default value is Current quarter
+        </li>
+        <li style="margin-top: 2vw; padding-bottom: 1rem;">
+          <span style="font-weight: bold;">&#9658; Class Type</span>: Search by
+          Class Type. TEST, SEMINAR or CTI.
+        </li>
+        <ul>
+          <li style="list-style-type: disc; padding-bottom: 0.5rem;">
+            <span style="font-weight: bold;">TEST</span>: These are recordings
+            internal to the RA website and only accessible to authorized RA
+            users. The COL staff uses the TEST group when carrying out daily
+            maintenance recordings.
+          </li>
+          <li style="list-style-type: disc; padding-bottom: 0.5rem;">
+            <span style="font-weight: bold;">SEMINAR</span>: These are
+            non-encrypted recordings. Once they upload, their playback link can
+            be retrieved from the RA website and provided to the requestor.
+            Since these are not encrypted, they can be universally distributed
+            and played by anyone.
+          </li>
+          <li style="list-style-type: disc; padding-bottom: 0.5rem;">
+            <span style="font-weight: bold;">CTI</span>: These are regular CDM
+            lecture recordings. They are encrypted by course and become
+            automatically available to students and instructor of that course
+            immediately after uploading to the server.
+          </li>
+        </ul>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Weekday</span>: Classes can
+          be searched using a particular day of the week. Default = ALL.
+        </li>
+
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; ClassroomGrp</span>: Search
+          by RA classroom group. Default = ALL.
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Class Name</span>: Classes
+          can be searched by Keyword or ClassName with ID.
+        </li>
+        <ul>
+          <li style="list-style-type: disc; padding-top: 1rem;">
+            <span style="font-weight: bold;">“Test Course in CDM 214”</span>
+            returns all recordings where the recording name contains that
+            phrase.
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </body>
+</html>

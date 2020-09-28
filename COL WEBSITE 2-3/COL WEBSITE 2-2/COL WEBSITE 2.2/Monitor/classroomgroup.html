@@ -1,0 +1,433 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <title>Monitor</title>
+    <style>
+      li{
+        list-style-type:none;
+        color: black;
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" >Home
+            </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Monitor.html"  color: rgb(255, 168, 6);">Monitor
+            </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Schedule.html" >Schedule</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="../pages/Recording.html"
+  
+              >Recording</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="../pages/Message.html"
+      
+              >Message</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="../pages/Log.html"
+        
+              >Log</a
+            >
+          </li>
+        </ul>
+        <a
+          style="color: white; font-size:20;"
+          href="https://colraweb.cdm.depaul.edu/ra/login.aspx?returnurl=/ra/default.aspx"
+          target="_blank"
+        >
+          Go to RA WEBSITE
+        </a>
+        </div>
+    </nav>
+
+    <script>
+        function changecolor() {
+            document.style.color = "red;"
+        }
+    </script>
+
+
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <img src="https://www.cdm.depaul.edu/PublishingImages/logo-tree-of-life-01.svg" style="width: 100%; height: 10%; margin-left: -5%; margin-top: 2%;" />
+
+        <div class="moved">
+            <a style="color: white;" href="../Monitor/classroomgroup.html">Classroom Group</a
+        >
+        <a  href="../Monitor/classroomvid.html"
+          >Classroom Video</a
+        >
+        <a  href="../Monitor/outputwindow.html"
+          >Output Window</a
+        >
+        <a  href="../Monitor/commands.html"
+          >Commands Window
+          <a onclick="changecolor()"  style="font-size: 20; padding-left: 15%; " href="../Monitor/commands.html#normf"> Normal Functions </a>
+            <a style="font-size: 20; padding-left: 15%;" href="../Monitor/commands.html#adf"> Advanced Functions </a>
+
+            </a>
+            <a  href="../Monitor/monitorguide.html">
+              RA Monitering Guide
+        </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <p style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: medium;
+          color: black;
+          font-weight: bold;
+          padding-top: 2rem;
+          padding-left: 1.6rem;
+        ">
+            There are about 70 COL enabled classrooms across two DePaul University campuses i.e. Loop campus and Lincoln Park which are administered via the RA website. At the Loop campus, the classrooms are across three buildings, i.e. CDM building, Lewis Center
+            and Daley building. On the RA website, these classrooms are grouped by campus/building, for easy navigation and monitoring.
+        </p>
+
+        <p style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: #000000;
+          font-size: medium;
+          font-weight: bold;
+          padding-left: 1.6rem;
+        ">
+            The Classroom Group dropdown allows the user to select the campus/building and then displays all the classrooms in that group, with the current status of all the COL software and hardware equipment in each classroom.
+        </p>
+
+        <ul class="list" >
+            <li style="color: #0905e9;
+            font-weight: bold;">&#9658; CDM (Default at logon)</li>
+            <li style="color: #0905e9;
+            font-weight: bold;">&#9658; DALEY</li>
+            <li style="color: #0905e9;
+            font-weight: bold;">&#9658; LEWIS</li>
+            <li style="color: #0905e9;
+            font-weight: bold;">&#9658; LINCOLN PARK</li>
+        </ul>
+
+        <img src="../Images/Monitor/cg1.PNG" width="900" height="500" alt="classroomgroup" style="padding: 2%; padding-left: 15%;" />
+
+        <h2 style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: medium;
+          color: #000000;
+          margin-top: 5vw;
+          margin-left: 3vw;
+        ">
+        &#10042; Each Classroom Group Contains 10 columns showing different equipment’s status
+        </h2>
+
+        <img src="../Images/Monitor/Cg2.PNG" width="900" height="600" alt="classroomgroup" style="padding: 2%; padding-left: 15%;" />
+
+        <ul>
+            <li style="list-style-type: none; margin-top: 2vw;">
+              <span style=" font-weight: bold;">❖ Room Type:</span> 
+              Shows different kinds of IPC (Instructor PC) available in a particular classroom.
+                <ul>
+                    <li>
+                      &#9658; PC: Classroom having  <span style="font-weight: bold;">Windows IPC with CDM Image.</span>
+                    </li>
+                    <li>
+                      &#9658; PC_L: Lab having <span style="font-weight: bold;"> Windows IPC with CDM Image.</span>
+            </li>
+            <li>
+              
+              &#9658; Mac_L: Lab having <span style="font-weight: bold;"> MAC IPC (Either iMac or Mac mini).</span>
+            </li>
+            <li>
+              &#9658; Mac_THT: Theater having<span style="font-weight: bold;"> MAC IPC (Either iMac or Mac mini).</span>
+            </li>
+            <li>
+              &#9658; Univ_PC: Classroom having <span style="font-weight: bold;"> Windows IPC with University (IS) image.</span>
+            </li>
+          </ul>
+        </li>
+        <li style="list-style-type: none;  margin-top: 2vw;">
+          <span style="font-weight: bold;">❖ Room:</span> Displays Building Name with Room Number e.g. (CDM 200, LEWIS
+          1005)
+        </li>
+        <li id="PPC" style="list-style-type: none;  margin-top: 2vw; ">
+          <span style="font-weight: bold;">❖ PPC (Engine):</span> Displays the status of the classroom’s Production PC
+          (COLEngine)
+        </li>
+        <ul>
+          <li>
+            <span
+              style="color: rgb(0, 143, 19); font-weight: bold;"
+            >
+            &#9658; IDLE</span
+            >: When the COLEngine is idle or in standby state
+          </li>
+          <li>
+            <span
+              style="color: rgb(5, 2, 184); font-weight: bold;"
+              >&#9658; RECO</span
+            >: While recording is in progress.
+          </li>
+          <li>
+            <span
+              style="color: rgb(201, 97, 0); font-weight: bold;"
+            >
+            &#9658; PROC</span
+            >: This state appears when recording is ended and is being processed
+          </li>
+          <li>
+            <span
+              style="color: rgb(201, 97, 0); font-weight: bold;"
+              >&#9658; UPLO</span
+            >: This state appears when processing is ended, and lecture is being
+            uploaded.
+          </li>
+          <li>
+            <span
+              style="color: rgb(255, 13, 13); font-weight: bold;"
+              >&#9658; ENGINEOFFLINE</span
+            >: RA website cannot communicate with COLEngine application. This
+            can be caused by one or more of the following reasons.
+          </li>
+          <ul>
+            <li style="list-style-type:disc;" >COLEngine.exe not running due to</li>
+            <ul >
+              <li style="list-style-type:circle;">COLEngine process has ended abruptly</li>
+              <li style="list-style-type:circle;">PPC is logged off</li>
+              <li style="list-style-type:circle;">PPC is powered off</li>
+              <li style="list-style-type:circle;">PPC is rebooting</li>
+            </ul>
+              <li style="list-style-type:disc;">PPC lost internet connection</li>
+              <li style="list-style-type:disc ;">
+                PPC IP has changed and RA no longer has its most recent IP
+              </li>
+           
+          </ul>
+        </ul>
+        <li  id="IPC"style="list-style-type: none;  margin-top: 2vw;">
+          <span style="font-weight: bold;">❖ IPC(Agent):</span> Displays the status of the classroom’s Instructor PC
+          (COLAgent)
+        </li>
+        <ul >
+          <li>
+            <span
+              style="color: rgb(3, 138, 192); font-weight: bold;"
+            >
+            &#9658; IPC LOGGED OFF</span
+            >: Computer is logged off (COLAgent is not running).
+          </li>
+          <li>
+            <span
+              style="color: rgb(31, 110, 7); font-weight: bold;"
+              > &#9658; AGENTLOADING. (x seconds)</span
+            >: Computer was just logged in and COLAgent is about to launch. x is
+            the number of seconds elapsed after logon until the COLAgent finally
+            starts running.
+          </li>
+          <li>
+            <span
+              style="color: rgb(0, 143, 19); font-weight: bold;"
+              >&#9658; IDLE</span
+            >: Computer is logged in, COLAgent is running and is in Idle state -
+            i.e. no recording in progress
+          </li>
+          <li>
+            <span
+              style="color: rgb(5, 2, 184); font-weight: bold;"
+              >&#9658; RECO IPC SCREEN</span
+            >: COLAgent is running and is in Recording state, i.e. there is a
+            recording in progress and the IPC screen is being captured.
+          </li>
+          <li>
+            <span
+              style="color: rgb(230, 214, 0); font-weight: bold;"
+            >
+            &#9658; AGENTPAUSED (..... seconds)</span
+            >: There is a recording in progress but the instructor has
+            temporarily disabled the COLAgent from capturing the IPC screen.
+          </li>
+          <li>
+            <span
+              style="color: rgb(255, 13, 13); font-weight: bold;"
+              >&#9658; AGENTOFFLINE</span 
+            >: The RA website is not getting a response from COLAgent
+            application. This can be caused by one or more of the following
+            reasons:
+          </li>
+          <ul>
+            <li  style="list-style-type:disc;" >
+              <span > COLAgent.exe</span> not running
+                    </li>
+                    <ul>
+                        <li  style="list-style-type:circle;" >COLAgent process has ended abruptly</li>
+                        <li style="list-style-type:circle;">IPC is powered off</li>
+                        <li style="list-style-type:circle;">IPC is rebooting</li>
+                      </ul>
+                        <li style="list-style-type:disc;">IPC lost internet connection</li>
+                        <li style="list-style-type:disc;">
+                            IPC IP has changed and RA no longer has its most recent IP
+                        </li>
+                    
+                </ul>
+        </ul>
+        <li style="list-style-type: none;  margin-top: 2vw;">
+          <span style="font-weight: bold;"> ❖ Conn:</span> This displays the connection state between IPC & PPC (COLAgent and COLEngine)
+        </li>
+        <ul>
+            <li>
+                <span style="color: rgb(0, 143, 19); font-weight: bold;">
+                  &#9658;  TRUE</span
+            >: This means there is a connection between IPC & PPC (Production
+            PC).
+          </li>
+          <li>
+            <span
+              style="color: rgb(3, 138, 192); font-weight: bold;"
+              >&#9658; FALSE</span
+            >: This means there is no connection between IPC & PPC (Production
+            PC).
+          </li>
+        </ul>
+        <li style="list-style-type: none;  margin-top: 2vw;">
+          <span style="font-weight: bold;">❖ Course:</span> Displays course description which is currently being
+          recorded.
+        </li>
+        <li style="list-style-type: none;  margin-top: 2vw;">
+          <span style="font-weight: bold;"> ❖ AV:</span> Provided feedback of Audio – Video recording status
+        </li>
+        <ul >
+          <li>
+            <span
+              style="color: rgb(0, 143, 19); font-weight: bold;"
+              >&#9658; ON</span
+            >: On means, audio and video are being captured and sent to the RA
+            website for monitoring, but there is no recording currently in
+            progress
+          </li>
+          <li>
+            <span
+              style="color: rgb(5, 2, 184); font-weight: bold;"
+              >&#9658; (increasing_number)</span
+            >: This means the AV capture process is successfully capturing and
+            recording the audio and video. As soon as recording begins, the AV
+            status changes to the current AV frame number and as the recording
+            progresses and more frames are captured, this number keeps on
+            increasing
+          </li>
+          <li>
+            <span
+              style="color: rgb(255, 13, 13); font-weight: bold;"
+            >
+            &#9658; OFF</span
+            >: Off means, audio and video are being not recorded
+          </li>
+          <li>
+            <span
+              style="color: rgb(255, 13, 13); font-weight: bold;"
+              >&#9658; NO CHANGE (lastframenumber)</span
+            >: (seconds) This happens if there is a recording in progress and
+            the AV Capture process encounters an issue. (lastframenumber)
+            indicates the frame at which AV capture stopped working and
+            (seconds) counts the number of seconds since the AV Capture stopped
+            working.
+          </li>
+        </ul>
+        <li style="list-style-type: none;  margin-top: 2vw;">
+          <span style="font-weight: bold;"> ❖ WB:</span> Displays number and status of mimio devices in the selected
+          classroom.
+        </li>
+        <ul >
+          <li>&#9658; When Room is <span style="color:rgb(0, 143, 19) ;" > IDLE</span>:</li>
+            <ul>
+                <li style="list-style-type:disc;">
+                    <span style="color: rgb(0, 143, 19); font-weight: bold;">
+                ON (1)</span
+              >: Classroom has 1 mimio and it is being successfully detected
+            </li>
+            <li style="list-style-type:disc;">
+              <span style="color:rgb(0, 143, 19); font-weight: bold;">
+                ON (2)</span
+              >: Classroom has 2 mimios and they are being successfully detected
+            </li>
+            <li style="list-style-type:disc;">
+              <span style="color: black; font-weight: bold; ">
+                <span> ON</span><span style="color:rgb(255, 13, 13) ;">(0/1)</span> / <span> ON </span> <span style="color:rgb(255, 13, 13) ;"> (1/2)</span> / <span> ON </span> <span style="color:rgb(255, 13, 13) ;"> (0/2)</span>:
+                </li>
+                <ul>
+                    <li style="list-style-type:circle;"> <span style="color:rgb(255, 13, 13) ;">(0/1)</span> means out of 1 none of them are detected.</li>
+                    <li style="list-style-type:circle;"> <span style="color:rgb(255, 13, 13) ;"> (1/2) </span> means out of 2, 1 of them is not detected</li>
+                    <li style="list-style-type:circle;"> <span style="color:rgb(255, 13, 13) ;"> (0/2) </span> means out of 2 none of them are detected.</li>
+                    <li style="list-style-type:circle;">
+                        <span style="color: rgb(255, 13, 13); font-weight: bold;">OFF</span>: When the white-board process is stopped abruptly, or Engine is offline
+                    </li>
+                </ul>
+                
+            </ul>
+            <li>&#9658; When the room is <span style="color: rgb(5, 2, 184);"> RECO:</span></li>
+                <ul>
+                    <li style="list-style-type:disc;"> <span style="color: rgb(5, 2, 184);"> CAP (x, y) </span> where, x = Mimio 1 events y = Mimio 2 events</li>
+                </ul>
+        </ul>
+        <li style="list-style-type: none;  margin-top: 2vw;">
+          <span style=" font-weight: bold;"> ❖ Sound:</span> Displays the status of audio feedback from the microphone
+        </li>
+        <ul>
+            <li>
+                <span style="color: rgb(0, 143, 19); font-weight: bold;">
+                  &#9658; ON</span
+            >: Audio is being received by the PPC from the microphones/mixer
+          </li>
+          <li>
+            <span
+              style="color: rgb(255, 13, 13); font-weight: bold;"
+            >
+            &#9658; OFF</span
+            >: No audio is being received by the PPC from the microphones/mixer
+          </li>
+        </ul>
+        <li
+          style="
+            list-style-type: none;
+            
+            margin-top: 2vw;
+            padding-bottom: 20px;
+          "
+        >
+        <span style="font-weight: bold;"> ❖ Disk(M):</span> Shows current available Disk Space in PPC (Production PC)
+          in Megabits. If the PPC runs out of disk space, it is a critical issue
+          because it won’t be able to store the recorded data anymore. <span  style="color: rgb(255, 13, 13);"> If this
+          value goes below 50,000 it will show up in RED color on the Monitor
+          Page.</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <title>Monitor</title>
+    <style>
+        li{
+          list-style-type:none;
+          color: black;
+        }
+      </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html" >Home </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="color:rgb(255, 168, 6) ;  " href="../pages/Monitor.html ">Monitor </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Recording.html">Recording</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Message.html" >Message</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Log.html" >Log</a>
+                </li>
+            </ul>
+            <a style="color: white; font-size:20;" href="https://colraweb.cdm.depaul.edu/ra/login.aspx?returnurl=/ra/default.aspx" target="_blank"> Go to RA WEBSITE </a>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+
+
+
+        <img src="https://www.cdm.depaul.edu/PublishingImages/logo-tree-of-life-01.svg" style="width: 100%;height: 10%; margin-left: -5%; margin-top: 2%;">
+        <div class="moved">
+            <a href="../Monitor/classroomgroup.html">Classroom Group</a>
+            <a href="../Monitor/classroomvid.html">Classroom Video</a>
+            <a href="../Monitor/outputwindow.html" style="color: white;">Output Window</a>
+            <a  href="../Monitor/commands.html"
+              >Commands Window
+              <a
+                style="padding-left: 15%;  font-size:20;"
+                href="../Monitor/commands.html#normf"
+              >
+                Normal Functions
+              </a>
+              <a
+                style="padding-left: 15%; font-size:20;"
+                href="../Monitor/commands.html#adf"
+              >
+                Advanced Functions
+              </a>
+            </a>
+            <a href="../Monitor/monitorguide.html">
+              RA Monitering Guide
+            </a>
+          </div>
+
+    </div>
+
+    <div class="main" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: medium">
+        <p style="color: #000000;font-size: medium; font-weight: bold; padding-top: 2rem;
+        padding-left: 1.6rem;">Displays status of the command that the user executes. Default value is selected classroom’s details.</p>
+        <img width="900" height="500" style="padding:2%;padding-left: 20%;" src="../Images/Monitor/ow.PNG" alt="outputwindow">
+
+        <ul>
+            <li style="list-style-type: none;;margin-top: 2vw; font-weight:bold">❖ Various details are been displayed on the output Screen on class selection they are as below</li>
+            <ul>
+                <li style="margin-top: 2vw;"> <span style="font-weight: bold; ">&#9658; Report Time</span>: Gives the current date and time of selection. </li>
+                <li style="margin-top: 2vw; "><span style="font-weight: bold;">&#9658; Free Disk</span>: Gives information of remaining disk space in Production PC (PPC).</li>
+                <li style="margin-top: 2vw;"><span style="font-weight: bold; ">&#9658; Recording Start Time</span>: Displays at what time recording has been started.</li>
+                <li style="margin-top: 2vw; "> <span style="font-weight: bold;">&#9658; Duration</span>: Displays time elapsed after recording began</li>
+                <li style="margin-top: 2vw;"><span style="font-weight: bold; ">&#9658; Time Remain</span>: Displays time remaining for recording to end</li>
+                <li style="margin-top: 2vw; "><span style="font-weight: bold;">&#9658; Engine Status</span>: Shows current COL Engine (PPC) status (listed below). </li>
+                <ul>
+                    <li><span style="color:rgb(9, 18, 234);">&#9658; Idle</span>: same as <span style="color: green; font-weight: bold;"> IDLE</span> PPC(Engine) section. </li>
+                    <li><span style="color:rgb(9, 18, 234);">&#9658; Recording a Lecture</span>: same as <span style="color: blue;font-weight: bold;">RECO</span> under PPC(Engine) section</li>
+                    <li><span style="color:rgb(9, 18, 234);">&#9658; Processing data</span>: same as <span style="color: orangered;font-weight: bold;">PROC</span> under PPC(Engine) section.</li>
+                    <li><span style="color:black;font-weight: bold;">&#9658; Uploading</span>: same as <span style="color: orangered;font-weight: bold;">UPLO</span> under PPC(Engine) section.</li>
+                    <li><span style="color:rgb(202, 0, 0);">&#9658; Engineoffline</span>: same as <span style="color: red; font-weight: bold;"> ENGINEOFFLINE</span> under PPC(Engine) section</li>
+                    <li style="list-style-type:disc; padding-bottom:0.5rem; padding-top:0.5rem;"><a href="../Monitor/classroomgroup.html#PPC" style=" background-color:rgba(0, 0, 0, 0.2); border-radius:5px; ">Click here on PPC(Engine) Section on Classroom Group Page For more Details.</a></li>
+
+                </ul>
+                <li style="margin-top: 2vw;"><span style="font-weight: bold;">&#9658; Agent Status</span>: Shows the current COL Agent status (listed below). </li>
+                <ul>
+                    <li><span style="color:rgb(9, 18, 234);">&#9658; Idle</span>: same as <span style="color:green;font-weight: bold;"> IDLE</span> under IPC (Agent) section</li>
+                    <li><span style="color:rgb(202, 0, 0);">&#9658; Not Login</span>: same as <span style="color: rgb(127,206,244); font-weight: bold;"> IPC LOGGED OFF</span> under IPC (Agent) section.</li>
+                    <li><span style="color:rgb(202, 0, 0);">&#9658; OFF</span>: same as <span style="color: red; font-weight: bold;"> AGENTOFFLINE</span> under IPC (Agent) section</li>
+                    <li style="list-style-type:disc; padding-bottom:0.5rem; padding-top:0.5rem;"><a href="../Monitor/classroomgroup.html#PPC" style=" background-color:rgba(0, 0, 0, 0.2); border-radius:5px; ">Click here on IPC(Agent) Section on Classroom Group Page For more Details.</a></li>
+
+                </ul>
+                <li style="margin-top: 2vw;"><span style="font-weight: bold;">&#9658; AV Status</span>: Audio-video feedback status (Initialized - ON).</li>
+                <li style="margin-top: 2vw;"> <span style="font-weight: bold;">&#9658; AV Frames</span>: Gives details of the number of frames recorded.</li>
+                <li style="margin-top: 2vw;"> <span style="font-weight: bold;">&#9658; Camera Status</span>: Selected class video feedback status</li>
+                <ul>
+                    <li style="list-style-type:disc;"> <span style="color:blue;font-weight: bold;"> ON</span>: Receiving video feedback from the camera</li>
+                    <li style="list-style-type:disc;"><span style="color:red;font-weight: bold;"> OFF</span>: No video feedback due to some issues</li>
+                </ul>
+                <li style="margin-top: 2vw;"> <span style="font-weight: bold;">&#9658; WB Number</span>: Displays number and status of mimio devices in the selected classroom, in the format: No. of detected mimio devices/Total no. of installed mimio devices.
+                </li>
+                <ul>
+                    <li style="list-style-type:disc;"><span style="color:green;font-weight: bold;"> 1/1</span>: Classroom has 1 mimio device installed and it is being detected.</li>
+                    <li style="list-style-type:disc;"><span style="color:green;font-weight: bold;"> 2/2</span>: Classroom has 2 mimio devices installed and both are detected.</li>
+                    <li style="list-style-type:disc;"> <span style="color:red;font-weight: bold;">0/1</span>: Out of 1 device, none are detected.</li>
+                    <li style="list-style-type:disc;"> <span style="color:red;font-weight: bold;">1/2</span>: Out of 2 devices, only 1 is detected.</li>
+                    <li style="list-style-type:disc;"> <span style="color:red;font-weight: bold;">0/2</span>: Out of 2, none are detected</li>
+                </ul>
+                <li style="margin-top: 2vw;"> <span style="font-weight: bold;"> &#9658; WB Status</span> : Provides status of whiteboard (mimio).</li>
+                <ul>
+                    <li style="list-style-type:disc;">No recording</span>: <span style="color: blue;"> Initialized </li>
+                    <li style="list-style-type:disc;">During recording</span>: Capturing <span style="color: blue;"> whiteboard – WB1 x events, WB2 y events</span></li>
+                </ul>
+                <li style="margin-top: 2vw;">
+                    <span style="font-weight: bold; ">&#9658; Sound Detector</span>: Provides information about audio feedback from the classroom.</li>
+                <li style="margin-top: 2vw; "> <span style="font-weight: bold; ">&#9658; Sound Grabber</span>: Grabber always detecting sound from the microphone to check the status of it. </li>
+                <li style="margin-top: 2vw; "> <span style="font-weight: bold; ">&#9658; Sound Source</span>: Gives status whether sound capturing device (microphones) is connected or not.</li>
+                <li style="margin-top: 2vw; "> <span style="font-weight: bold; ">&#9658; IPCIP</span>: Provides Instructor PC (IPC) IP address</li>
+                <li style="margin-top: 2vw; "> <span style="font-weight: bold; ">&#9658; PPCIP</span>: Provides Production PC (PPC) IP address</li>
+                <li style="margin-top: 2vw; "> <span style="font-weight: bold; ">&#9658; Connection</span>: Displays the status of whether the has a connection with PPC or not.</li>
+                <ul>
+                    <li style="list-style-type:disc;"><span style="color:blue;font-weight: bold; "> True</span>: Connection established between Instructor PC (IPC) & Production PC (PPC)</li>
+                    <li style="padding-bottom: 20px; list-style-type:disc; "> <span style="color:red;font-weight: bold; ">False</span>: No Connection between Instructor PC (IPC) & Production PC (PPC).</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <title>Monitor</title>
+    <style>
+      li {
+        list-style-type: none;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: rgb(255, 168, 6);"
+              href="../pages/Monitor.html "
+              >Monitor
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Recording.html">Recording</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Message.html">Message</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Log.html">Log</a>
+          </li>
+        </ul>
+        <a
+          style="color: white; font-size: 20;"
+          href="https://colraweb.cdm.depaul.edu/ra/login.aspx?returnurl=/ra/default.aspx"
+          target="_blank"
+        >
+          Go to RA WEBSITE
+        </a>
+      </div>
+    </nav>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <img
+        src="https://www.cdm.depaul.edu/PublishingImages/logo-tree-of-life-01.svg"
+        style="width: 100%; height: 10%; margin-left: -5%; margin-top: 2%;"
+      />
+      <div class="moved">
+        <a href="../Monitor/classroomgroup.html">Classroom Group</a>
+        <a href="../Monitor/classroomvid.html">Classroom Video</a>
+        <a href="../Monitor/outputwindow.html">Output Window</a>
+        <a style="color: white;" href="../Monitor/commands.html"
+          >Commands Window
+          <a
+            style="font-size: 20; padding-left: 15%;"
+            href="../Monitor/commands.html#normf"
+          >
+            Normal Functions
+          </a>
+          <a
+            style="font-size: 20; padding-left: 15%;"
+            href="../Monitor/commands.html#adf"
+          >
+            Advanced Functions
+          </a>
+        </a>
+        <a href="../Monitor/monitorguide.html">
+          RA Monitering Guide
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="main"
+      style="
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+      "
+    >
+      <p
+        style="
+          color: black;
+          font-size: medium;
+          font-weight: bold;
+          padding-top: 2rem;
+          padding-left: 1.6rem;
+        "
+      >
+        Commands window provides two types of functionalities i.e. Normal
+        Functions, Advanced Function. Normal functions provide features like
+        Start, stop course etc. and advanced functions provides features like
+        push new recording, check schedule etc.
+      </p>
+      <img
+        width="900"
+        height="650"
+        style="padding: 2%; padding-left: 20%;"
+        src="../Images/Monitor/function.PNG"
+        alt="Commands"
+      />
+      <h4
+        style="
+          font-size: 1.7rem;
+          padding-top: 2rem;
+          text-decoration: underline;
+          padding-bottom: 1rem;
+          text-decoration: underline;
+          text-align: center;
+        "
+        id="normf"
+      >
+        Normal Functions
+      </h4>
+      <ul>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Classroom Info</span>: Gives
+          the detailed information about the Selected Classroom
+        </li>
+        <li style="margin-top: 2vw; color: rgb(88, 88, 88);">
+          &#9658;
+          <span style="font-weight: bold; text-decoration: line-through;">
+            Classroom Log</span
+          >: Inactive feature
+        </li>
+        <li style="margin-top: 2vw; color: rgb(88, 88, 88);">
+          &#9658;
+          <span style="font-weight: bold; text-decoration: line-through;">
+            Overview</span
+          >: Inactive feature
+        </li>
+        <li style="margin-top: 2vw; color: rgb(88, 88, 88);">
+          &#9658;
+          <span style="font-weight: bold; text-decoration: line-through;">
+            VNC to PPC</span
+          >: Remote Connection for Production PC (Inactive feature)
+        </li>
+        <li style="margin-top: 2vw; color: rgb(88, 88, 88);">
+          &#9658;
+          <span style="font-weight: bold; text-decoration: line-through;">
+            VNC to IPC</span
+          >: Remote Connection for Instructor PC (Inactive feature)
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Stop Course</span>: This
+          command enables the user to end an ongoing recording prematurely,
+          before it is scheduled to end. The portion recorded until that point
+          is retained and uploaded and the COL Engine stops recording from that
+          point onwards. (i.e. If a recording is scheduled to run from 5:45 pm
+          to 9:00 pm, but is STOPPED at 7.00pm, the portion recorded from 5:45
+          until 7:00 is processed and uploaded after which the COLEngine goes
+          back to IDLE)
+        </li>
+        <ul>
+          <li style="list-style-type: disc; padding-top: 1rem;">
+            Steps to Stop Recording
+            <ol>
+              <li style="padding-top: 1rem;">
+                1.<span style="color: red;">
+                  If you need to stop an ongoing lecture recording, please make
+                  sure the classroom, course etc. are accurate before attempting
+                  to stop the recording.</span
+                >
+              </li>
+              <li>
+                2. First select the classroom where an ongoing recording needs
+                to be stopped.
+              </li>
+              <li>
+                3. From the Commands, select
+                <span style="font-weight: bold;"> Stop Course. </span>
+              </li>
+              <li>
+                4. A confirmation window will appear on the screen, as below
+              </li>
+              <li>
+                5. Verify the classroom and the Coursename for the recording you
+                are trying to stop
+              </li>
+              <li>
+                6. After verification, press OK button to stop the recording.
+              </li>
+              <li>
+                7. The Output should display:
+                <span style="color: blue;">
+                  Command [stop course(classroom)]-Success!.</span
+                >
+              </li>
+              <li>
+                8. After being stopped, the recording will start processing and
+                will upload shortly
+              </li>
+            </ol>
+          </li>
+          <img
+            width="700"
+            height="200"
+            style="padding: 2%; padding-left: 20%; margin-top: 2vw;"
+            src="../Images/Monitor/cmd2.png"
+            alt="commands"
+          />
+        </ul>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Abort Course</span>: This
+          command enables the user to end an ongoing recording – but the
+          recorded portion until that point is not uploaded. This action is
+          equivalent to canceling the recording entirely. (e.g. If a recording
+          is scheduled to run from 5:45 pm to 9:00 pm, but is ABORTED at 7.00pm,
+          the recording ends and the COLEngine goes back to IDLE. The portion
+          recorded from 5:45 until 7:00 is disregarded completely. It stays on
+          the PPC but is neither processed nor uploaded.)
+        </li>
+        <ul>
+          <li style="list-style-type: disc; padding-top: 1rem;">
+            Steps to Abort Recording.
+          </li>
+          <ol>
+            <li style="padding-top: 1rem;">
+              1.<span style="color: red;">
+                If you need to abort an ongoing lecture recording, please make
+                sure the classroom, course etc. are accurate before attempting
+                to abort the recording.</span
+              >
+            </li>
+            <li>
+              2. First select the classroom where an ongoing recording needs to
+              be aborted
+            </li>
+            <li>3. From the Command select the Abort Course</li>
+            <li>
+              4. A Confirmation window will appear on the screen, as below
+            </li>
+            <li>
+              5.<span style="color: red;">
+                Verify the classroom and the Coursename for the recording you
+                are trying to abort.</span
+              >
+            </li>
+            <li>
+              6. After verification, type first 8 letters of the course name in
+              the Confirmation box
+            </li>
+            <li>
+              7. The output should display:
+              <span style="color: blue;">
+                Command [abort course(classroom)]-Success!.</span
+              >
+            </li>
+            <li>
+              8. After being aborted, the recording will be ended and will be
+              discarded (not uploaded.)
+            </li>
+            <img
+              width="700"
+              height="200"
+              style="padding: 2%; padding-left: 20%; margin-top: 2vw;"
+              src="../Images/Monitor/cmd3.png"
+              alt="Commands"
+            />
+          </ol>
+        </ul>
+        <li>
+          <span style="font-weight: bold;">&#9658; Start Test Course</span>:
+          This command is used to manually start a recording in the selected
+          classroom. When this command is selected, a form is generated in the
+          output window, as below, for the user to enter details of the
+          recording to be started:.
+        </li>
+        <img
+          width="700"
+          height="300"
+          style="padding: 2%; padding-left: 20%;"
+          src="../Images/Monitor/cmd4.png"
+          alt="Commands"
+        />
+        <ul>
+          <li style="list-style-type: disc;">
+            <span style="font-weight: bold;"> Quarter</span>: Select Quarter
+            (Default is current quarter)
+          </li>
+          <li style="list-style-type: disc;">
+            <span style="font-weight: bold;"> Class Type</span>: Select type of
+            recording to start. Options are TEST, SEMINAR or CTI
+          </li>
+          <img
+            width="700"
+            height="300"
+            style="padding: 2%; padding-left: 20%;"
+            src="../Images/Monitor/cmd5.png"
+            alt="Commdands"
+          />
+          <ul>
+            <li style="margin-top: 2vw; list-style-type: circle;">
+              <span style="font-weight: bold;">TEST:</span> Recordings under the
+              TEST category are internal to the RA website and only accessible
+              to authorized RA users. The COL staff uses the TEST type when
+              carrying out daily maintenance recordings
+            </li>
+            <li style="margin-top: 2vw; list-style-type: circle;">
+              <span style="font-weight: bold;">SEMINAR:</span> Recordings under
+              the SEMINAR category are unencrypted recordings. Once they upload,
+              their playback link can be retrieved from the RA website by an
+              admin and provided to the DePaul staff or faculty member who
+              requested the recording. Since these are unencrypted recordings,
+              their playback link can be universally distributed and they can be
+              played by anyone who has the link.
+            </li>
+            <li style="margin-top: 2vw; list-style-type: circle;">
+              <span style="font-weight: bold;"> CTI:</span> Recordings of type
+              CTI are College of CDM lecture recordings. They are encrypted by
+              course name and become automatically available to students and
+              instructor of that course immediately after uploading.
+            </li>
+          </ul>
+          <li style="margin-top: 2vw; list-style-type: disc;">
+            <span style="font-weight: bold;"> Course Name</span>: Enter the name
+            of the recording, depending on the type selected:
+          </li>
+          <ul>
+            <li style="margin-top: 2vw; list-style-type: circle;">
+              TEST: Course Name is Test Course in [Classroom] at [date] [time]
+              (editable)
+            </li>
+            <li style="margin-top: 2vw; list-style-type: circle;">
+              CTI: The Course Name is a dropdown list of all current CDM courses
+            </li>
+            <li style="margin-top: 2vw; list-style-type: circle;">
+              SEMINAR: Course Name is Test Course in [Classroom] at [date]
+              [time] (editable)
+            </li>
+            <img
+              width="700"
+              height="300"
+              style="padding: 2%; padding-left: 20%;"
+              src="../Images/Monitor/cmd6.PNG"
+              alt="cmd"
+            />
+          </ul>
+          <li style="margin-top: 2vw; list-style-type: disc;">
+            <span style="font-weight: bold;"> Instructor </span>: Enter name of
+            the instructor. (If CTI type is selected, then after selecting the
+            Course Name, that course instructor’s name gets automatically filled
+            in here)
+          </li>
+          <li style="margin-top: 2vw; list-style-type: disc;">
+            <span style="font-weight: bold;"> Length </span>: Specify the
+            duration of the recording from the time it begins, in one of two
+            ways;
+          </li>
+          <ul>
+            <li style="padding-top: 1.5rem; list-style-type: circle;">
+              <span style="font-weight: bold;"> Length:</span> Enter the desired
+              length of the recording in Hours, Minutes and Seconds - __H(ours)
+              __M(inutes)__S(econds) E.g. For a recording of 1 hour 15 minute
+              duration, select Length > 01H 15M 00S
+            </li>
+            <img
+              width="600"
+              height="100"
+              style="padding: 2%; padding-left: 30%;"
+              src="../Images/Monitor/cmd7.png"
+              alt="cmd"
+            />
+            <li style="list-style-type: circle;">
+              <span style="font-weight: bold;"> End Time:</span> Select the
+              exact time (that same day) at which the recording should stop,
+              specify it in 24 hr. format as __:__:__ E.g. For a recording to
+              end at 9:15 PM, select End Time > 21:15:00
+            </li>
+            <img
+              width="600"
+              height="100"
+              style="padding: 2%; padding-left: 30%;"
+              src="../Images/Monitor/cmd8.png"
+              alt="cmd"
+            />
+          </ul>
+          <li style="margin-top: 2vw; list-style-type: circle;">
+            <span style="font-weight: bold;"> File server</span>:
+            colsvr.cdm.depaul.edu (default)
+          </li>
+          <li style="margin-top: 2vw; list-style-type: circle;">
+            <span style="font-weight: bold;">Start Button</span>: To start the
+            test recording
+          </li>
+          <img
+            width="700"
+            height="300"
+            style="padding: 2%; padding-left: 20%;"
+            src="../Images/Monitor/cmd9.png"
+            alt="cmd"
+          />
+        </ul>
+      </ul>
+
+      <h4
+        style="
+          font-size: 1.7rem;
+          padding-top: 2rem;
+          text-decoration: underline;
+          padding-bottom: 1rem;
+          text-decoration: underline;
+          text-align: center;
+        "
+        id="adf"
+      >
+        Advanced Functions
+      </h4>
+      <img
+        width="600"
+        height="423"
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #000000;
+        "
+        src="../Images/Monitor/advancd_func.PNG"
+        alt="cmd"
+      />
+      <ul>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Push Schedule</span>: Updates
+          that classroom PPC’s local recording schedule with any recent changes
+          that were made to that classroom’s recording schedule via RA website.
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Check Schedule</span>: Shows
+          all upcoming recordings scheduled in the selected classroom. (Pending
+          changes that have not been Pushed yet, show up in Red)
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Group Schedule</span>:
+          Displays the list of all upcoming recordings scheduled in all the
+          classrooms in the current Group, for the selected date.
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; List Local Data</span>:
+          Displays the recorded data currently present on the PPC of the
+          selected classroom.
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Push Config</span>: When this
+          command is run on a classroom, IP confirmation requests get sent from
+          the RA website to the IPC and PPC of the selected classroom, as well
+          as from the IPC and PPC to each other. On receiving this request, the
+          IPC (via the COLAgent application) and PPC (via the COL Engine
+          application) then respond to the RA website and to each other,
+          confirming their IP addresses are the same as what the RA website
+          expects them to be for that classroom. The result of the Push Config
+          command can be seen in the Output window
+        </li>
+        <img
+          style="margin-top: 2vw; margin-left: 20vw;"
+          src="../Images/Monitor/cmd11.png"
+          alt="cmd"
+        />
+        <h5 style="margin-top: 2vw; margin-left: 5vw;">Push Config Output:</h5>
+        <p style="margin-top: 2vw; margin-left: 5vw;">
+          <span style="color: blue;">
+            Command [push config to ppc( CDM 632 )]-Success!
+          </span>
+          - The RA website was successfully able to contact the PPC at its
+          preset IP address
+        </p>
+        <p style="margin-left: 5vw;">
+          <span style="color: blue;">
+            Command [push config to ipc( CDM 632 )]-Success!</span
+          >
+          - The RA website was successfully able to contact the IPC at its
+          preset IP address
+        </p>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Reboot PPC</span>: Restarts
+          the Production PC
+        </li>
+        <li style="margin-top: 2vw;">
+          <span style="font-weight: bold;">&#9658; Reboot IPC</span>: Restarts
+          the Instructor PC.
+        </li>
+        <p style="margin-top: 2vw; margin-left: 5vw;">
+          NOTE: The Reboot IPC command only works with CDM Windows IPC, and the
+          IPC must be in the logged-in state for the command to work i.e.
+          COLAgent needs to be running.
+        </p>
+        <ul>
+          <li style="margin-left: 2.5vw;">
+            &#10006; Does not work on an IS imaged IPC because restart is
+            disabled by their Group Policy.
+          </li>
+          <li style="padding-bottom: 20px; margin-left: 2.5vw;">
+            &#10006; Also does not work on Mac IPC
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </body>
+</html>

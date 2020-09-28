@@ -1,0 +1,292 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <title>Log</title>
+    <style>
+      li {
+        list-style-type: none;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Monitor.html">Monitor </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Recording.html">Recording</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Message.html">Message</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="../pages/Log.html"
+              style="color: rgb(255, 168, 6);"
+              >Log</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <img
+        src="https://www.cdm.depaul.edu/PublishingImages/logo-tree-of-life-01.svg"
+        style="width: 100%; height: 8%;"
+      />
+
+      <div class="moved">
+        <a style="color: white;" href="../Log/uploadStatus.html"
+          >Upload Status</a
+        >
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-left: 20vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+      "
+    >
+      <p style="padding-bottom: 2rem; padding-top: 2rem; font-weight: bold;">
+        &#10042; Displays all the past recorded lectures upload status with some
+        other information (i.e.).
+      </p>
+
+      <img
+        src="../Images/Log/log1.png"
+        alt=""
+        style="
+          width: 800px;
+          height: 209px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #000000;
+        "
+      />
+      <br />
+      <br />
+      <br />
+      <h4
+        style="
+          text-decoration: underline;
+          padding-bottom: 1rem;
+          text-decoration: underline;
+          text-align: center;
+        "
+        id="normf"
+      >
+        Search Bar
+      </h4>
+
+      <p style="padding-bottom: 2rem; font-weight: bold;">
+        &#10042; Each of the uploaded recordings can be searched here by using
+        various filters.
+      </p>
+      <img
+        src="../Images/Log/up_search.png"
+        alt=""
+        style="
+          width: 800px;
+          height: 187px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #000000;
+        "
+      />
+      <br />
+      <br />
+      <br />
+      <p style="padding-bottom: 2rem; padding-top: 2rem; font-weight: bold;">
+        &#9658; Class Type:
+        <span style="font-weight: 400;">
+          by Class Type. TEST, SEMINAR or CTI</span
+        >
+      </p>
+      <ul>
+        <li style="list-style-type: disc; padding-bottom: 1.5rem;">
+          <span style="font-weight: bold;">TEST:</span> These are recordings
+          internal to the RA website and only accessible to authorized RA users.
+          The COL staff uses the TEST group when carrying out daily maintenance
+          recordings
+        </li>
+        <li style="list-style-type: disc; padding-bottom: 1.5rem;">
+          <span style="font-weight: bold;"> SEMINAR:</span> These are
+          non-encrypted recordings. Once they upload, their playback link can be
+          retrieved from the RA website and provided to the requestor. Since
+          these are not encrypted, they can be universally distributed and
+          played by anyone.
+        </li>
+        <li style="list-style-type: disc; padding-bottom: 1.5rem;">
+          <span style="font-weight: bold;"> CTI:</span> These are regular CDM
+          lecture recordings. They are encrypted by course and become
+          automatically available to students and instructor of that course
+          immediately after uploading to the server
+        </li>
+      </ul>
+      <p>
+        &#9658; <span style="font-weight: bold;"> Classroom Group:</span> Search
+        by RA classroom group. Default value ALL.
+      </p>
+      <p>
+        &#9658; <span style="font-weight: bold;">From:</span> Search recording
+        starting from this date.
+      </p>
+      <p>
+        &#9658; <span style="font-weight: bold;"> To:</span> Search recording
+        until this date.
+      </p>
+      <br />
+      <p style="font-size: large;">
+        &#9658;
+        <span style="text-decoration: underline; font-weight: bold;">
+          Upload Status Search Result:</span
+        >
+        Displays past lecture with upload status with some information.
+      </p>
+      <img
+        src="../Images/Log/log2.png"
+        alt=""
+        style="
+          padding-top: 2rem;
+          width: 800px;
+          height: 303px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #000000;
+        "
+      />
+      <p style="font-size: medium; padding-top: 7rem;">
+        &#9658;
+        <span style="text-decoration: underline; font-weight: bold;"
+          >Status Color Coding:</span
+        >
+        upload status of each recording is indicated by its color coding.
+      </p>
+      <ul>
+        <li style="list-style-type: disc;">
+          <span style="color: rgb(0, 143, 19); font-weight: bold;">
+            Green:</span
+          >
+          Green color and status = YES, means the recording was successfully
+          uploaded.
+          <img
+            src="../Images/Log/status 2.png"
+            alt=""
+            style="
+              width: 900px;
+              height: 19px;
+              margin-top: 2rem;
+              border: 1px solid #000000;
+            "
+          />
+          <br />
+          <br />
+        </li>
+        <li style="list-style-type: disc;">
+          <span style="color: rgb(255, 13, 13); font-weight: bold;"> Red:</span>
+          Red color and status = NO suggests recording was not uploaded.
+          <img
+            src="../Images/Log/status 1.png"
+            alt=""
+            style="
+              width: 900px;
+              height: 19px;
+              margin-top: 2rem;
+              border: 1px solid #000000;
+            "
+          />
+          <br />
+          <br />
+        </li>
+      </ul>
+      <p>
+        &#9658; <span style="font-weight: bold;"> Class Name:</span> Gives the
+        class name with class ID.
+      </p>
+      <p>
+        &#9658; <span style="font-weight: bold;"> Classroom:</span> Classroom
+        information where it was recorded (Building and Room).
+      </p>
+      <p>
+        &#9658; <span style="font-weight: bold;"> Server:</span> Displays server
+        location where lecture was uploaded.
+      </p>
+      <p>
+        &#9658; <span style="font-weight: bold;"> Start Time:</span> Provides
+        with the start-time of the lecture with Date.
+      </p>
+      <p>
+        &#9658; <span style="font-weight: bold;"> Uploaded:</span> Displays the
+        upload status.
+      </p>
+      <ul>
+        <li style="list-style-type: disc; padding-bottom: 1rem;">
+          <span style="color: rgb(0, 143, 19); font-weight: bold;"> YES:</span>
+          Recording was uploaded.
+        </li>
+        <li style="list-style-type: disc;">
+          <span style="color: rgb(255, 13, 13); font-weight: bold;"> NO:</span>
+          Recording was not uploaded due two reasons.
+          <ul>
+            <li
+              style="
+                list-style-type: circle;
+                padding-top: 1rem;
+                padding-bottom: 0.5rem;
+              "
+            >
+              Recording was aborted on request.
+            </li>
+            <li style="list-style-type: circle;">
+              Recording did not get uploaded (Requires investigation and follow
+              up.)
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        &#9658;
+        <span style="font-weight: bold; padding-bottom: 2rem;">
+          Instructor:</span
+        >
+        Displays Instructor Name of the particular class.
+      </p>
+    </div>
+  </body>
+</html>
